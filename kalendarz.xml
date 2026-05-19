@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kalendarz>
+    <kontakty>
+        <kontakt email="bartosz.pietrzak@example.com" id="31" imie="Bartosz" nazwisko="Pietrzak" telefon="+48703456789"/>
+        <kontakt email="dominik.wrobel@example.com" id="32" imie="Dominik" nazwisko="Wrobel" telefon="+48507890123"/>
+        <kontakt email="iwona.krawczyk@example.com" id="33" imie="Iwona" nazwisko="Krawczyk" telefon="+48500123456"/>
+        <kontakt email="k.majewski@example.com" id="34" imie="Krzysztof" nazwisko="Majewski" telefon="+48605678901"/>
+        <kontakt email="natalia.baran@example.com" id="35" imie="Natalia" nazwisko="Baran" telefon="+48706789012"/>
+        <kontakt email="olga.stepien@example.com" id="36" imie="Olga" nazwisko="Stepien" telefon="+48504567890"/>
+        <kontakt email="pawel.szymczak@example.com" id="37" imie="Pawel" nazwisko="Szymczak" telefon="+48709012345"/>
+        <kontakt email="rafal.gorski@example.com" id="38" imie="Rafal" nazwisko="Gorski" telefon="+48501234567"/>
+        <kontakt email="sylwia.chmiel@example.com" id="39" imie="Sylwia" nazwisko="Chmiel" telefon="+48608901234"/>
+        <kontakt email="weronika.sikora@example.com" id="40" imie="Weronika" nazwisko="Sikora" telefon="+48602345678"/>
+    </kontakty>
+    <zdarzenia>
+        <zdarzenie data="2026-02-08T18:00" id="11" location="https://maps.example.com/kawiarnia" opis="Urodziny Bartka">
+            <uczestnik email="bartosz.pietrzak@example.com"/>
+        </zdarzenie>
+        <zdarzenie data="2026-05-21T20:00" id="12" location="https://maps.example.com/stodola" opis="Koncert w Stodole">
+            <uczestnik email="iwona.krawczyk@example.com"/>
+            <uczestnik email="rafal.gorski@example.com"/>
+        </zdarzenie>
+        <zdarzenie data="2026-01-14T10:00" id="10" location="https://maps.example.com/dentysta" opis="Wizyta u dentysty">
+            <uczestnik email="olga.stepien@example.com"/>
+        </zdarzenie>
+    </zdarzenia>
+</kalendarz>
