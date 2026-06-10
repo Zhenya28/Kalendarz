@@ -14,14 +14,14 @@
     </kontakty>
     <zdarzenia>
         <zdarzenie data="2026-02-08T18:00" id="11" location="https://maps.example.com/kawiarnia" opis="Urodziny Bartka">
-            <uczestnik email="bartosz.pietrzak@example.com"/>
+            <uczestnik kontaktId="31"/>
         </zdarzenie>
         <zdarzenie data="2026-05-21T20:00" id="12" location="https://maps.example.com/stodola" opis="Koncert w Stodole">
-            <uczestnik email="iwona.krawczyk@example.com"/>
-            <uczestnik email="rafal.gorski@example.com"/>
+            <uczestnik kontaktId="33"/>
+            <uczestnik kontaktId="38"/>
         </zdarzenie>
         <zdarzenie data="2026-01-14T10:00" id="10" location="https://maps.example.com/dentysta" opis="Wizyta u dentysty">
-            <uczestnik email="olga.stepien@example.com"/>
+            <uczestnik kontaktId="36"/>
         </zdarzenie>
     </zdarzenia>
 </kalendarz>
