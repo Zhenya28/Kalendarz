@@ -11,17 +11,33 @@
         <kontakt email="rafal.gorski@example.com" id="38" imie="Rafal" nazwisko="Gorski" telefon="+48501234567"/>
         <kontakt email="sylwia.chmiel@example.com" id="39" imie="Sylwia" nazwisko="Chmiel" telefon="+48608901234"/>
         <kontakt email="weronika.sikora@example.com" id="40" imie="Weronika" nazwisko="Sikora" telefon="+48602345678"/>
+        <kontakt email="example@gmail.com" id="41" imie="a" nazwisko="a" telefon="+485214124"/>
+        <kontakt email="r@gmail.com" id="67" imie="tt" nazwisko="rr" telefon="+48543123678"/>
+        <kontakt email="k@gmail.com" id="68" imie="GG" nazwisko="r" telefon="+486754567866"/>
     </kontakty>
     <zdarzenia>
+        <zdarzenie data="2026-01-14T10:00" id="10" location="https://maps.example.com/dentysta" opis="Wizyta u dentysty">
+            <uczestnik kontaktId="36"/>
+            <uczestnik kontaktId="68"/>
+        </zdarzenie>
         <zdarzenie data="2026-02-08T18:00" id="11" location="https://maps.example.com/kawiarnia" opis="Urodziny Bartka">
-            <uczestnik email="bartosz.pietrzak@example.com"/>
+            <uczestnik kontaktId="31"/>
+            <uczestnik kontaktId="68"/>
         </zdarzenie>
         <zdarzenie data="2026-05-21T20:00" id="12" location="https://maps.example.com/stodola" opis="Koncert w Stodole">
-            <uczestnik email="iwona.krawczyk@example.com"/>
-            <uczestnik email="rafal.gorski@example.com"/>
+            <uczestnik kontaktId="33"/>
+            <uczestnik kontaktId="38"/>
         </zdarzenie>
-        <zdarzenie data="2026-01-14T10:00" id="10" location="https://maps.example.com/dentysta" opis="Wizyta u dentysty">
-            <uczestnik email="olga.stepien@example.com"/>
+        <zdarzenie data="2026-06-05T15:06" id="13" location="https://maps.app.goo.gl/s7XPwTMX8sP9JXvH6" opis="Spotkanie">
+            <uczestnik kontaktId="31"/>
+            <uczestnik kontaktId="32"/>
+            <uczestnik kontaktId="33"/>
+            <uczestnik kontaktId="34"/>
+        </zdarzenie>
+        <zdarzenie data="2026-07-12T12:00" id="0" location="WWW" opis="QQQQ">
+            <uczestnik kontaktId="68"/>
+            <uczestnik kontaktId="67"/>
+            <uczestnik kontaktId="41"/>
         </zdarzenie>
     </zdarzenia>
 </kalendarz>
