@@ -3,9 +3,10 @@ package group.com;
 import java.net.URI;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class Zdarzenie {
+public class Zdarzenie implements Comparable<Zdarzenie> {
 	private int id;
 	private LocalDateTime data;
 	private String opis;
@@ -64,6 +65,30 @@ public class Zdarzenie {
 			this.kontakty.add(k);
 			k.getZdarzenia().add(this);
 		}
+	}
+
+	@Override
+	public int compareTo(Zdarzenie z) {
+		return this.data.compareTo(z.getData());
+	}
+
+	/**
+	 * Usuwa z listy wszystkie zdarzenia wcześniejsze niż podana granica
+	 * i odpina je od powiązanych kontaktów. Zwraca liczbę usuniętych zdarzeń.
+	 */
+	public static int usunStarszeNiz(List<Zdarzenie> zdarzenia, LocalDateTime granica) {
+		int przed = zdarzenia.size();
+		Iterator<Zdarzenie> it = zdarzenia.iterator();
+		while (it.hasNext()) {
+			Zdarzenie z = it.next();
+			if (z.getData().isBefore(granica)) {
+				for (Kontakt k : z.getKontakty()) {
+					k.getZdarzenia().remove(z);
+				}
+				it.remove();
+			}
+		}
+		return przed - zdarzenia.size();
 	}
 
 	@Override
